@@ -65,3 +65,29 @@ export async function signOutAction() {
   await supabase?.auth.signOut();
   redirect("/");
 }
+
+export async function requestPasswordResetAction(_prev: ActionState, formData: FormData): Promise<ActionState> {
+  const ip = clientIpFrom(await headers());
+  if (!rateLimit(`reset:${ip}`, 5, 60 * 60_000)) return { ok: false, message: "Muitas tentativas. Aguarde alguns minutos." };
+  const email = String(formData.get("email") ?? "").trim().toLowerCase();
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return { ok: false, message: "E-mail inválido." };
+  const supabase = await createClient();
+  if (!supabase) return { ok: false, message: "Serviço ainda não configurado." };
+  await supabase.auth.resetPasswordForEmail(email, { redirectTo: `${SITE_URL}/auth/callback?next=/nova-senha` });
+  // Mesma resposta exista ou não a conta, para não revelar quais e-mails têm cadastro.
+  return { ok: true, message: "Se esse e-mail tiver cadastro, enviamos um link para criar uma nova senha." };
+}
+
+export async function updatePasswordAction(_prev: ActionState, formData: FormData): Promise<ActionState> {
+  const password = String(formData.get("password") ?? "");
+  const confirm = String(formData.get("confirm") ?? "");
+  if (password.length < 8 || password.length > 72) return { ok: false, message: "A senha deve ter pelo menos 8 caracteres." };
+  if (password !== confirm) return { ok: false, message: "As senhas não são iguais." };
+  const supabase = await createClient();
+  if (!supabase) return { ok: false, message: "Serviço ainda não configurado." };
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return { ok: false, message: "O link expirou. Peça um novo em Esqueci minha senha." };
+  const { error } = await supabase.auth.updateUser({ password });
+  if (error) return { ok: false, message: /same|different/i.test(error.message) ? "Use uma senha diferente da anterior." : "Não foi possível trocar a senha agora." };
+  redirect("/?senha=alterada");
+}

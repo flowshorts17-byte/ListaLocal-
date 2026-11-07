@@ -5,7 +5,7 @@ import { getBanners, getCategories, getFeaturedProducts, getGiftSuggestions, get
 
 export const dynamic = "force-dynamic";
 
-export default async function HomePage({ searchParams }: { searchParams: Promise<{ erro?: string }> }) {
+export default async function HomePage({ searchParams }: { searchParams: Promise<{ erro?: string; senha?: string }> }) {
   const sp = await searchParams;
   const [categories, featured, popular, suggestions, stores, banners] = await Promise.all([
     getCategories(),
@@ -19,6 +19,11 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
 
   return (
     <>
+      {sp.senha === "alterada" && (
+        <div role="status" className="container-page pt-4">
+          <p className="rounded-md bg-sage-soft px-3 py-2 text-sm text-sage-dark">Senha alterada com sucesso. Você já está conectado.</p>
+        </div>
+      )}
       {sp.erro === "sem-permissao" && (
         <div role="alert" className="container-page pt-4">
           <p className="rounded-md bg-accent-soft px-3 py-2 text-sm text-accent-dark">
