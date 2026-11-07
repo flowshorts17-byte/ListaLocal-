@@ -1,7 +1,17 @@
 import Link from "next/link";
 import { requireSession } from "@/lib/auth";
 
-export const metadata = { robots: { index: false, follow: false } };
+import type { Metadata, Viewport } from "next";
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+  title: "ListaLocal Admin",
+  manifest: "/ll-admin/manifest.webmanifest",
+  appleWebApp: { capable: true, title: "LL Admin", statusBarStyle: "default" },
+  icons: { apple: "/ll-admin/apple-180.png" },
+};
+
+export const viewport: Viewport = { themeColor: "#c4532f" };
 
 const NAV = [
   { href: "/admin", label: "Dashboard" },

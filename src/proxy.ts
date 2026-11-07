@@ -58,6 +58,6 @@ export async function proxy(request: NextRequest) {
 export const config = {
   matcher: [
     // ignora arquivos estáticos, imagens e as rotas de redirecionamento de clique
-    "/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|r/|w/|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico)$).*)",
+    "/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|r/|w/|ll-admin/|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico)$).*)",
   ],
 };
