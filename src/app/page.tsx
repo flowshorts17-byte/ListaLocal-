@@ -5,7 +5,8 @@ import { getBanners, getCategories, getFeaturedProducts, getGiftSuggestions, get
 
 export const dynamic = "force-dynamic";
 
-export default async function HomePage() {
+export default async function HomePage({ searchParams }: { searchParams: Promise<{ erro?: string }> }) {
+  const sp = await searchParams;
   const [categories, featured, popular, suggestions, stores, banners] = await Promise.all([
     getCategories(),
     getFeaturedProducts(8),
@@ -18,6 +19,13 @@ export default async function HomePage() {
 
   return (
     <>
+      {sp.erro === "sem-permissao" && (
+        <div role="alert" className="container-page pt-4">
+          <p className="rounded-md bg-accent-soft px-3 py-2 text-sm text-accent-dark">
+            Sua conta não tem acesso a essa área. O painel do lojista é só para contas de loja; administradores usam a página Administração.
+          </p>
+        </div>
+      )}
       {/* Hero */}
       <section className="border-b border-sand-200 bg-sand">
         <div className="container-page grid gap-10 py-14 sm:py-20 lg:grid-cols-[1.25fr_1fr] lg:items-end">

@@ -46,7 +46,7 @@ export async function SiteHeader() {
               <Link href="/entrar" className="btn-ghost btn-sm">
                 Entrar
               </Link>
-              <Link href="/cadastro" className="btn-primary btn-sm hidden sm:inline-flex">
+              <Link href="/cadastro" className="btn-primary btn-sm">
                 Criar conta
               </Link>
             </>
