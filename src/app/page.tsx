@@ -36,7 +36,8 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
         <div className="container-page grid gap-10 py-14 sm:py-20 lg:grid-cols-[1.25fr_1fr] lg:items-end">
           <div>
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-sage">Encontre. Escolha. Presenteie.</p>
-            <p className="font-script text-5xl leading-none text-sage sm:text-6xl">Mimoa</p>
+            {/* eslint-disable-next-line @next/next/no-img-element -- logo estático */}
+            <img src="/mimoa-logo.png" alt="Mimoa" className="h-20 w-auto sm:h-24" />
             <h1 className="h-display mt-3 text-[2.1rem] leading-[1.12] sm:text-5xl lg:text-[3.3rem]">
               Presentes com carinho para cada momento especial.
             </h1>

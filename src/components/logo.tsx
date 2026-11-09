@@ -1,10 +1,11 @@
 import Link from "next/link";
+import Image from "next/image";
 
-/** Logotipo tipográfico do Mimoa. */
+/** Logotipo do Mimoa. */
 export function Logo({ className = "" }: { className?: string }) {
   return (
     <Link href="/" aria-label="Mimoa — página inicial" className={`inline-flex items-center ${className}`}>
-      <span className="font-script text-[2.1rem] leading-none text-sage">Mimoa</span>
+      <Image src="/mimoa-logo.png" alt="Mimoa" width={600} height={215} priority className="h-11 w-auto" />
     </Link>
   );
 }
