@@ -62,7 +62,7 @@ export default async function ManageListPage({ params, searchParams }: { params:
       <div className="mt-6 rounded-md border border-sage/30 bg-sage-soft p-4 text-sm">
         <p className="font-medium">Link para compartilhar</p>
         <p className="mt-1 break-all font-mono text-xs">{publicUrl}</p>
-        <a className="mt-2 inline-block text-sage-dark underline" href={`https://wa.me/?text=${encodeURIComponent(`Veja minha lista de presentes no ListaLocal: ${publicUrl}`)}`} target="_blank" rel="noopener">
+        <a className="mt-2 inline-block text-sage-dark underline" href={`https://wa.me/?text=${encodeURIComponent(`Veja minha lista de presentes no Mimoa: ${publicUrl}`)}`} target="_blank" rel="noopener">
           Compartilhar pelo WhatsApp
         </a>
       </div>

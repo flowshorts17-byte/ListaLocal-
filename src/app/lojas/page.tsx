@@ -5,7 +5,7 @@ import { getStores } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Lojas participantes",
-  description: "Diretório de estabelecimentos locais parceiros do ListaLocal.",
+  description: "Diretório de estabelecimentos locais parceiros do Mimoa.",
   alternates: { canonical: "/lojas" },
 };
 
@@ -19,7 +19,7 @@ export default async function StoresPage() {
   return (
     <div className="container-page py-10">
       <h1 className="h-display text-3xl sm:text-4xl">Lojas participantes</h1>
-      <p className="mt-2 max-w-2xl text-ink-soft">Estabelecimentos locais que vendem pelo ListaLocal. O contato e a compra são feitos direto com a loja, pelo WhatsApp.</p>
+      <p className="mt-2 max-w-2xl text-ink-soft">Estabelecimentos locais que vendem pelo Mimoa. O contato e a compra são feitos direto com a loja, pelo WhatsApp.</p>
       <div className="mt-6"><SetupNotice /></div>
       <div className="mt-8 space-y-10">
         {Object.keys(byCity).length === 0 && (

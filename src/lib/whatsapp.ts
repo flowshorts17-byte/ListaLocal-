@@ -4,7 +4,7 @@
  */
 
 export const WHATSAPP_MESSAGE_PREFIX =
-  "Olá! Encontrei este produto no ListaLocal e gostaria de saber mais informações:";
+  "Olá! Encontrei este produto no Mimoa e gostaria de saber mais informações:";
 
 /** Mantém apenas dígitos e garante o DDI 55 (Brasil). Retorna null se inválido. */
 export function normalizeWhatsapp(input: string | null | undefined): string | null {

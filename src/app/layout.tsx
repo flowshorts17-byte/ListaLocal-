@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "@fontsource-variable/inter";
-import "@fontsource-variable/fraunces";
+import "@fontsource-variable/playfair-display";
+import "@fontsource/great-vibes";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#f7f3ec",
+  themeColor: "#fbf1ef",
   width: "device-width",
   initialScale: 1,
 };

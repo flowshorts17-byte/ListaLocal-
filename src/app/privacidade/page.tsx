@@ -6,7 +6,7 @@ export const metadata: Metadata = { title: "Política de privacidade", alternate
 export default function Page() {
   return (
     <LegalPage title="Política de privacidade" updated="07/11/2026">
-      <p>Esta política explica como o ListaLocal trata dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p>
+      <p>Esta política explica como o Mimoa trata dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 — LGPD).</p>
       <h2>Dados que coletamos</h2>
       <ul>
         <li><strong>Conta:</strong> nome, e-mail e senha (armazenada de forma criptografada pelo provedor de autenticação).</li>
@@ -26,7 +26,7 @@ export default function Page() {
       <h2>Retenção</h2>
       <p>Dados de conta são mantidos enquanto a conta existir. Reservas e registros de vendas são mantidos pelo tempo necessário para o histórico da lista e para obrigações legais.</p>
       <h2>Seus direitos</h2>
-      <p>Você pode solicitar acesso, correção, portabilidade ou exclusão dos seus dados, e revogar consentimentos, pelo canal de contato indicado pelo ListaLocal.</p>
+      <p>Você pode solicitar acesso, correção, portabilidade ou exclusão dos seus dados, e revogar consentimentos, pelo canal de contato indicado pelo Mimoa.</p>
     </LegalPage>
   );
 }

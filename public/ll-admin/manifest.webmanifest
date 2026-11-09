@@ -1,14 +1,14 @@
 {
   "id": "/admin?app=ll-admin",
-  "name": "ListaLocal Admin",
+  "name": "Mimoa Admin",
   "short_name": "LL Admin",
-  "description": "Painel de administração do ListaLocal",
+  "description": "Painel de administração do Mimoa",
   "start_url": "/admin?app=1",
   "scope": "/admin",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#f7f3ec",
-  "theme_color": "#c4532f",
+  "background_color": "#fbf1ef",
+  "theme_color": "#b4566f",
   "lang": "pt-BR",
   "icons": [
     { "src": "/ll-admin/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },

@@ -33,7 +33,7 @@ export async function saveStoreAction(_prev: ActionState, fd: FormData): Promise
   const { error } = await s.supabase.from("stores").insert({ ...payload, owner_id: s.userId, slug: uniqueSlug(parsed.data.name) });
   if (error) return { ok: false, message: "Não foi possível cadastrar a loja." };
   revalidatePath("/painel", "layout");
-  return { ok: true, message: "Loja cadastrada! Ela ficará visível após a aprovação da equipe ListaLocal." };
+  return { ok: true, message: "Loja cadastrada! Ela ficará visível após a aprovação da equipe Mimoa." };
 }
 
 export async function saveMyProductAction(_prev: ActionState, fd: FormData): Promise<ActionState> {

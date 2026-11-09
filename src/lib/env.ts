@@ -6,6 +6,6 @@ export function isSupabaseConfigured(): boolean {
 }
 
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000").replace(/\/+$/, "");
-export const SITE_NAME = "ListaLocal";
+export const SITE_NAME = "Mimoa";
 export const SITE_SLOGAN = "Encontre. Escolha. Presenteie.";
 export const TIMEZONE = "America/Sao_Paulo";

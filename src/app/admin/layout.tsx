@@ -5,7 +5,7 @@ import type { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
   robots: { index: false, follow: false },
-  title: "ListaLocal Admin",
+  title: "Mimoa Admin",
   manifest: "/ll-admin/manifest.webmanifest",
   appleWebApp: { capable: true, title: "LL Admin", statusBarStyle: "default" },
   icons: { apple: "/ll-admin/apple-180.png" },

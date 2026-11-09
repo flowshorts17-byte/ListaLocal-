@@ -67,7 +67,7 @@ export default async function PublicListPage({ params }: { params: Promise<{ slu
       <div className="mx-auto mt-6 max-w-3xl rounded-md bg-sand p-4 text-xs leading-relaxed text-ink-soft">
         <strong className="text-ink">Como funciona:</strong> itens de <strong>lojas locais</strong> podem ser reservados por 48 horas; a loja entra em contato para
         combinar pagamento e entrega. Itens de <strong>ofertas afiliadas</strong> são comprados no site do marketplace; depois, você pode marcar
-        “Já comprei” — essa informação é declarada por você e <strong>não é verificada automaticamente</strong> pelo ListaLocal.
+        “Já comprei” — essa informação é declarada por você e <strong>não é verificada automaticamente</strong> pelo Mimoa.
       </div>
 
       <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -128,7 +128,7 @@ export default async function PublicListPage({ params }: { params: Promise<{ slu
                             <input type="hidden" name="slug" value={list.slug} />
                             <input className="input" name="guest_name" placeholder="Seu nome" required minLength={2} maxLength={80} aria-label="Seu nome" />
                             <input className="input" name="guest_message" placeholder="Recado (opcional)" maxLength={300} aria-label="Recado" />
-                            <p className="text-xs text-ink-mute">Esta marcação é informada por você e não é verificada pelo ListaLocal. O item continua disponível para outros convidados.</p>
+                            <p className="text-xs text-ink-mute">Esta marcação é informada por você e não é verificada pelo Mimoa. O item continua disponível para outros convidados.</p>
                             <SubmitButton className="btn-ghost w-full" pendingLabel="Enviando…">Informar compra</SubmitButton>
                           </ActionForm>
                         </details>

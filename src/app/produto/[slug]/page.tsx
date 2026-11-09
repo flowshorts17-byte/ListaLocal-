@@ -157,7 +157,7 @@ export default async function ProductPage({ params, searchParams }: Params) {
               <p className="text-xs text-ink-mute">Você será direcionado ao WhatsApp da loja com uma mensagem pronta. O pagamento e a entrega são combinados diretamente com a loja.</p>
             ) : (
               <p className="text-xs text-ink-mute">
-                Link de afiliado: você será levado ao site do marketplace e o ListaLocal pode receber uma comissão, sem custo extra para você.{" "}
+                Link de afiliado: você será levado ao site do marketplace e o Mimoa pode receber uma comissão, sem custo extra para você.{" "}
                 <Link href="/divulgacao-de-afiliados" className="underline">Saiba mais</Link>.
               </p>
             )}

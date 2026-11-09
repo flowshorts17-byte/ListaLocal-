@@ -6,11 +6,11 @@ export const metadata: Metadata = { title: "Termos de uso", alternates: { canoni
 export default function Page() {
   return (
     <LegalPage title="Termos de uso" updated="07/11/2026">
-      <h2>O que é o ListaLocal</h2>
-      <p>O ListaLocal é uma plataforma de descoberta de produtos e de listas de presentes. Reunimos produtos de lojas locais parceiras e ofertas de marketplaces por meio de programas de afiliados.</p>
+      <h2>O que é o Mimoa</h2>
+      <p>O Mimoa é uma plataforma de descoberta de produtos e de listas de presentes. Reunimos produtos de lojas locais parceiras e ofertas de marketplaces por meio de programas de afiliados.</p>
       <h2>Compras</h2>
       <ul>
-        <li>O ListaLocal <strong>não vende produtos e não processa pagamentos</strong>.</li>
+        <li>O Mimoa <strong>não vende produtos e não processa pagamentos</strong>.</li>
         <li>Produtos de lojas locais são negociados diretamente com a loja, pelo WhatsApp. Preço, disponibilidade, pagamento, entrega e trocas são de responsabilidade da loja.</li>
         <li>Ofertas afiliadas são compradas no site do marketplace, sob os termos dele. Preços exibidos aqui podem estar desatualizados.</li>
       </ul>

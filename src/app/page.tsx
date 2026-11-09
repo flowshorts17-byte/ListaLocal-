@@ -32,12 +32,13 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
         </div>
       )}
       {/* Hero */}
-      <section className="border-b border-sand-200 bg-sand">
+      <section className="border-b border-sand-200 bg-[radial-gradient(ellipse_at_top_right,var(--color-sage-soft),transparent_60%),radial-gradient(ellipse_at_bottom_left,var(--color-accent-soft),transparent_55%)] bg-sand">
         <div className="container-page grid gap-10 py-14 sm:py-20 lg:grid-cols-[1.25fr_1fr] lg:items-end">
           <div>
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-sage">Encontre. Escolha. Presenteie.</p>
-            <h1 className="h-display text-[2.35rem] leading-[1.08] sm:text-5xl lg:text-[3.6rem]">
-              O presente certo está mais perto do que você imagina.
+            <p className="font-script text-5xl leading-none text-sage sm:text-6xl">Mimoa</p>
+            <h1 className="h-display mt-3 text-[2.1rem] leading-[1.12] sm:text-5xl lg:text-[3.3rem]">
+              Presentes com carinho para cada momento especial.
             </h1>
             <p className="mt-5 max-w-xl text-base text-ink-soft sm:text-lg">
               Descubra produtos, encontre lojas e monte listas especiais em um só lugar.

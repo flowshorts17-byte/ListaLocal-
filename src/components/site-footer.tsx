@@ -38,8 +38,8 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-sand-200">
         <p className="container-page py-4 text-xs text-ink-mute">
-          © {new Date().getFullYear()} ListaLocal. Alguns links são de afiliados: podemos receber comissão sem custo extra para você.
-          O ListaLocal não processa pagamentos; as compras são feitas diretamente com as lojas e marketplaces.
+          © {new Date().getFullYear()} Mimoa. Alguns links são de afiliados: podemos receber comissão sem custo extra para você.
+          O Mimoa não processa pagamentos; as compras são feitas diretamente com as lojas e marketplaces.
         </p>
       </div>
     </footer>

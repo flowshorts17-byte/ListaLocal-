@@ -2,28 +2,29 @@
 
 @theme {
   --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-display: "Fraunces Variable", ui-serif, Georgia, serif;
+  --font-display: "Playfair Display Variable", ui-serif, Georgia, serif;
+  --font-script: "Great Vibes", "Brush Script MT", cursive;
 
   --color-paper: #ffffff;
-  --color-sand: #f7f3ec;
-  --color-sand-200: #ede6d9;
-  --color-sand-300: #ddd3c2;
-  --color-ink: #2a2c2e;
-  --color-ink-soft: #5c6064;
-  --color-ink-mute: #8a8e92;
-  --color-sage: #4f7d5c;
-  --color-sage-dark: #3f6749;
-  --color-sage-soft: #e6efe7;
-  --color-accent: #c4532f;
-  --color-accent-dark: #a6441f;
-  --color-accent-soft: #f8e7df;
+  --color-sand: #fbf1ef;
+  --color-sand-200: #f3e1dd;
+  --color-sand-300: #e6c9c3;
+  --color-ink: #3a2a2d;
+  --color-ink-soft: #6b5458;
+  --color-ink-mute: #9a8589;
+  --color-sage: #b4566f;
+  --color-sage-dark: #93425a;
+  --color-sage-soft: #f8e4e8;
+  --color-accent: #c9776b;
+  --color-accent-dark: #a85a4f;
+  --color-accent-soft: #fbebe7;
   --color-warn: #a86a12;
   --color-warn-soft: #fbf0dc;
   --color-danger: #b42318;
 
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 8px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
 }
 
 html {
@@ -50,7 +51,7 @@ body {
     @apply inline-flex items-center justify-center gap-2 rounded-md px-4 py-2.5 text-sm font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-60;
   }
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-md px-4 py-2.5 text-sm font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-60 bg-ink text-white hover:bg-black;
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-4 py-2.5 text-sm font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-60 bg-sage text-white hover:bg-sage-dark;
   }
   .btn-sage {
     @apply inline-flex items-center justify-center gap-2 rounded-md px-4 py-2.5 text-sm font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-60 bg-sage text-white hover:bg-sage-dark;
